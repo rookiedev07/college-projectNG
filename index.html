@@ -16,7 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #f{
-            color: grey;
+            color: rgb(218, 216, 216);
         }
         nav{
             display: inline-block;
@@ -25,23 +25,43 @@
             display: inline-block;
             float: right;
             margin-right: 7px;
-            color: rgb(178, 176, 176);
+            color: rgb(218, 216, 216);
         }
         li{
             display: inline-block;
             margin-left: 3em;
-            color: rgb(171, 167, 167);
+            color: rgb(218, 216, 216);
+            transition: color 0.4s ease;
+        }
+        li:hover{
+            color: greenyellow;
         }
         .quotes{
             height: 200px;
             width: 470px;
-            color: grey;
+            color: rgb(218, 216, 216);
             margin-top: 7em;
             margin-left: 3em;
             font-size: 1.25em;
         }
         #quoter{
             color: greenyellow;
+        }
+        .image{
+            background-color: rgb(255, 255, 255);
+            height: 340px;
+            width: 450px;
+            display: flex;
+            align-items: center;
+            border-radius: 20%;
+            margin-left: 49em;
+            margin-top: -15em;
+            overflow: hidden;
+            position: relative;
+        }
+        .image img{
+            padding-top: 5em;
+            padding-left: 1em;
         }
         .reminder{
             height: 190px;
@@ -54,27 +74,10 @@
             padding-right: 1.5em;
             padding-top: 0.25em;
             padding-bottom: 0.25em;
+            margin-top: -5em;
             margin-left: 3em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: inline-block;
-        }
-        .something{
-            height: 190px;
-            width: 14em;
-            background-color: greenyellow;
-            color: black;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border-radius: 1.25em;
-            display: inline-block;
-            justify-content: center;
-            align-items: center;
-            margin-left: 1em;
-        }
-        .associated{
-            align-items: center;
-            display: flex;
-            height: 50vh;
-            margin-top: -4em;
         }
     </style>
 </head>
@@ -93,15 +96,15 @@
         <div class="quotes">
             <h1>"Let food be thy medicine and medicine be thy food." <h1 id="quoter">– Hippocrates</h1></h1>
         </div>
+        <div class="image">
+            <img src="https://www.pngkey.com/png/full/792-7928605_first-nutrition-pure-whey-protein-results.png" alt="Guy lifting a dumbell" height="400" width="600"/>
+        </div>
         <div class="associated">
             <div class="reminder">
                 <h3>Boost Your Fitness Journey</h3>
                 <p>Using Our Website and Its Services You Can Take Your Fitness Journey To a Whole New Level
                     Start Now and Get Your Hands on Our Personalized Workout and Diet Plans According to your Body Type.
                 </p>
-            </div>
-            <div class="something">
-                <h1 class="i">10 Days Till The Offer Expires Hurry  Up!</h1>
             </div>
         </div>
     </div>
