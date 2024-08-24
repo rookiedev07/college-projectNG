@@ -6,8 +6,13 @@
     <title>Document</title>
     <style>
         body{
-            background-color: black;
+            background-color: rgb(73, 72, 72);
             color: white;
+            background-image: url('https://i.ytimg.com/vi/B8Gjmvj3NDo/maxresdefault.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
         }
         h2{
             color: greenyellow;
@@ -22,10 +27,13 @@
             display: inline-block;
         }
         h4{
-            display: inline-block;
             float: right;
             margin-right: 7px;
             color: rgb(218, 216, 216);
+            transition: color 0.4s ease;
+        }
+        h4:hover{
+            color: greenyellow;
         }
         li{
             display: inline-block;
@@ -40,43 +48,80 @@
             height: 200px;
             width: 470px;
             color: rgb(218, 216, 216);
-            margin-top: 7em;
-            margin-left: 3em;
+            margin-top: 8em;
+            margin-left: 4em;
             font-size: 1.25em;
         }
         #quoter{
             color: greenyellow;
         }
         .image{
-            background-color: rgb(255, 255, 255);
-            height: 340px;
-            width: 450px;
+            background-color: rgb(31, 30, 30);
+            height: 410px;
+            width: 490px;
             display: flex;
             align-items: center;
-            border-radius: 20%;
+            border-radius: 10%;
             margin-left: 49em;
             margin-top: -15em;
             overflow: hidden;
             position: relative;
+            float: right;
+            margin-right: 4em;
+            animation: fly-in-from-right ease 1.5s forwards;
         }
-        .image img{
-            padding-top: 5em;
-            padding-left: 1em;
+        @keyframes fly-in-from-right {
+    from {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 0; /* Optional: start with 0 opacity */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Optional: end with full opacity */
+    }
+}
+header{
+    animation: fly-in-from-up ease 1.5s forwards;
+}
+@keyframes fly-in-from-up {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#Re, #Qu{
+    animation: fly-in-from-left ease 1.5s forwards;
+}
+@keyframes fly-in-from-left {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        .guy{
+            background-size: cover;
         }
         .reminder{
             height: 190px;
             width: 300px;
             text-wrap: wrap;
             color: black;
-            background-color: white;
+            background-color: greenyellow;
             border-radius: 2.5em;
             padding-left: 1.5em;
             padding-right: 1.5em;
             padding-top: 0.25em;
-            padding-bottom: 0.25em;
-            margin-top: -5em;
-            margin-left: 3em;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: -13em;
+            margin-left: 4em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             display: inline-block;
         }
     </style>
@@ -93,20 +138,21 @@
         <h4>Follow us</h4>
     </header>
     <div class="container">
-        <div class="quotes">
+        <div id="Qu" class="quotes">
             <h1>"Let food be thy medicine and medicine be thy food." <h1 id="quoter">– Hippocrates</h1></h1>
         </div>
         <div class="image">
-            <img src="https://www.pngkey.com/png/full/792-7928605_first-nutrition-pure-whey-protein-results.png" alt="Guy lifting a dumbell" height="400" width="600"/>
+            <img src="https://img.freepik.com/premium-photo/gymfocused-bodybuilder-lifting-dumbbells-generative-ia_209190-4495.jpg" class="guy" alt="Guy lifting a dumbell"  />
         </div>
         <div class="associated">
-            <div class="reminder">
+            <div id="Re" class="reminder">
                 <h3>Boost Your Fitness Journey</h3>
                 <p>Using Our Website and Its Services You Can Take Your Fitness Journey To a Whole New Level
                     Start Now and Get Your Hands on Our Personalized Workout and Diet Plans According to your Body Type.
                 </p>
             </div>
         </div>
+        <div class="body_types"></div>
     </div>
 </body>
 </html>
