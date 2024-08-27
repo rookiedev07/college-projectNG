@@ -68,7 +68,7 @@
             position: relative;
             float: right;
             margin-right: 4em;
-            animation: fly-in-from-right ease 1.5s forwards;
+            animation: fly-in-from-right ease 2.2s forwards;
         }
         @keyframes fly-in-from-right {
     from {
@@ -81,7 +81,7 @@
     }
 }
 header{
-    animation: fly-in-from-up ease 1.5s forwards;
+    animation: fly-in-from-up ease 2.2s forwards;
 }
 @keyframes fly-in-from-up {
     from{
@@ -94,7 +94,7 @@ header{
     }
 }
 #Re, #Qu{
-    animation: fly-in-from-left ease 1.5s forwards;
+    animation: fly-in-from-left ease 2.2s forwards;
 }
 @keyframes fly-in-from-left {
     from{
@@ -124,7 +124,52 @@ header{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             display: inline-block;
         }
+        .endomorph, .ectomorph, .mesomorph{
+            border-radius: 1.5em;
+            background-color: rgb(18, 18, 18);
+            color: greenyellow;
+            height: 10em;
+            width: 11em;
+            display: inline-block;
+            margin-right: 5em;
+        }
+        #BT{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 16vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        hr{
+            border: none;
+            height: 2px;
+            background-color: rgb(67, 65, 65);
+        }
+        .endomorph-img{
+            display: none;
+        }
+        #endomorph, #ectomorph, #mesomorph{
+            border-radius: 1.5em;
+            background-color: rgb(18, 18, 18);
+            border-color: rgb(18, 18, 18);
+            color: greenyellow;
+            height: 11em;
+            width: 12em;
+            display: inline-block;
+            margin-right: 5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1em;
+        }
     </style>
+    <script>
+function toggleHiddenDiv(){
+    const hiddenDiv = document.querySelector('.endomorph-img')
+    hiddenDiv.style.display = hiddenDiv.style.display === 'block' ? 'none' : 'block';
+}
+function hideDiv(){
+    document.querySelector('.endomorph-img').style.display = 'none'
+} 
+    </script>
 </head>
 <body>
     <header>
@@ -152,7 +197,19 @@ header{
                 </p>
             </div>
         </div>
-        <div class="body_types"></div>
+        <br>
+        <br>
+        <div class="body_types">
+            <h2>Ideal Body Types</h2>
+            <hr>
+                <button class="def" id="endomorph" onclick="toggleHiddenDiv()">ENDOMORPH</button>
+                <button class="def" id="ectomorph" onclick="toggleHiddenDiv()">ECTOMORPH</button>
+                <button class="def" id="mesomorph" onclick="toggleHiddenDiv()">MESOMORPH</button>
+                    <div class="hidden_div">
+                        <img src="https://www.bing.com/images/blob?bcid=S-pa3QPfh28HeN5OxHd.yZpdzh.q.....24" class="endomorph-img" alt="Endomorph Image" />
+                    </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
