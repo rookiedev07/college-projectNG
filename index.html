@@ -121,8 +121,14 @@ header{
             padding-top: 0.25em;
             margin-top: -13em;
             margin-left: 4em;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             display: inline-block;
+            font-style: italic;
+
+        }
+        #headingR{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .endomorph, .ectomorph, .mesomorph{
             border-radius: 1.5em;
@@ -159,6 +165,17 @@ header{
             margin-right: 5em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1em;
+            box-shadow: 12px 10px 10px rgb(136, 197, 197);
+        }
+        .BodyTypes{
+            padding-left: 1.5em;
+        }
+        .def{
+            transition: transform 0.3s;
+
+        }
+        .def:hover{
+            transform: scale(1.2);
         }
     </style>
     <script>
@@ -191,7 +208,7 @@ function hideDiv(){
         </div>
         <div class="associated">
             <div id="Re" class="reminder">
-                <h3>Boost Your Fitness Journey</h3>
+                <h3 id="headingR">Boost Your Fitness Journey</h3>
                 <p>Using Our Website and Its Services You Can Take Your Fitness Journey To a Whole New Level
                     Start Now and Get Your Hands on Our Personalized Workout and Diet Plans According to your Body Type.
                 </p>
@@ -202,9 +219,11 @@ function hideDiv(){
         <div class="body_types">
             <h2>Ideal Body Types</h2>
             <hr>
-                <button class="def" id="endomorph" onclick="toggleHiddenDiv()">ENDOMORPH</button>
+                <div class="BodyTypes">
+                    <button class="def" id="endomorph" onclick="toggleHiddenDiv()">ENDOMORPH</button>
                 <button class="def" id="ectomorph" onclick="toggleHiddenDiv()">ECTOMORPH</button>
                 <button class="def" id="mesomorph" onclick="toggleHiddenDiv()">MESOMORPH</button>
+                </div>
                     <div class="hidden_div">
                         <img src="https://www.bing.com/images/blob?bcid=S-pa3QPfh28HeN5OxHd.yZpdzh.q.....24" class="endomorph-img" alt="Endomorph Image" />
                     </div>
