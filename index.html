@@ -6,16 +6,23 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(73, 72, 72);
+            background-color: rgb(255, 255, 255);
             color: white;
+        }
+        .container{
             background-image: url('https://i.ytimg.com/vi/B8Gjmvj3NDo/maxresdefault.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-blend-mode: overlay;
+            margin-bottom: 2em;
+            margin-left: -1em;
+            margin-right: -1em;
+            height: 52em;
+            margin-top: 0em;
         }
         h2{
-            color: greenyellow;
+            color: rgb(0, 0, 0);
             display: inline-block;
             margin-left: 5px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +35,7 @@
         }
         h4{
             float: right;
-            margin-right: 7px;
+            margin-right: 20px;
             color: rgb(218, 216, 216);
             transition: color 0.4s ease;
         }
@@ -41,14 +48,14 @@
             color: rgb(218, 216, 216);
             transition: color 0.4s ease;
         }
-        li:hover{
+        .nav-bar li:hover{
             color: greenyellow;
         }
         .quotes{
             height: 200px;
             width: 470px;
             color: rgb(218, 216, 216);
-            margin-top: 8em;
+            padding-top: 8em;
             margin-left: 4em;
             font-size: 1.25em;
         }
@@ -62,8 +69,8 @@
             display: flex;
             align-items: center;
             border-radius: 10%;
-            margin-left: 49em;
-            margin-top: -15em;
+            justify-content: end;
+            margin-top: -10em;
             overflow: hidden;
             position: relative;
             float: right;
@@ -81,7 +88,10 @@
     }
 }
 header{
-    animation: fly-in-from-up ease 2.2s forwards;
+
+    background-color: black;
+    margin-left: -1em;
+    margin-right: -1em ;
 }
 @keyframes fly-in-from-up {
     from{
@@ -119,7 +129,7 @@ header{
             padding-left: 1.5em;
             padding-right: 1.5em;
             padding-top: 0.25em;
-            margin-top: -13em;
+            margin-top: 7em;
             margin-left: 4em;
             font-family: Arial, Helvetica, sans-serif;
             display: inline-block;
@@ -138,6 +148,10 @@ header{
             width: 11em;
             display: inline-block;
             margin-right: 5em;
+        }
+        .body_types{
+            margin-top: 0em;
+            
         }
         #BT{
             justify-content: center;
@@ -158,14 +172,20 @@ header{
             border-radius: 1.5em;
             background-color: rgb(18, 18, 18);
             border-color: rgb(18, 18, 18);
-            color: greenyellow;
-            height: 11em;
-            width: 12em;
+            color: rgb(0, 0, 0);
+            height: 15em;
+            width: 26em;
             display: inline-block;
-            margin-right: 5em;
+            margin-left: 4em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1em;
-            box-shadow: 12px 10px 10px rgb(136, 197, 197);
+            box-shadow: 12px 10px 10px rgb(0, 0, 0);
+        }
+        .box1{
+            background-size: contain;
+            border-radius: 1.45em;
+            
+
         }
         .BodyTypes{
             padding-left: 1.5em;
@@ -175,7 +195,7 @@ header{
 
         }
         .def:hover{
-            transform: scale(1.2);
+            transform: scale(1.05);
         }
     </style>
     <script>
@@ -191,7 +211,7 @@ function hideDiv(){
 <body>
     <header>
         <h2>NewGen</h2><h2 id="f">Fitness</h2>
-        <nav>
+        <nav class="nav-bar">
             <li>Home</li>
             <li>Events</li>
             <li>Blog</li>
@@ -214,21 +234,18 @@ function hideDiv(){
                 </p>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="body_types">
-            <h2>Ideal Body Types</h2>
-            <hr>
-                <div class="BodyTypes">
-                    <button class="def" id="endomorph" onclick="toggleHiddenDiv()">ENDOMORPH</button>
-                <button class="def" id="ectomorph" onclick="toggleHiddenDiv()">ECTOMORPH</button>
-                <button class="def" id="mesomorph" onclick="toggleHiddenDiv()">MESOMORPH</button>
-                </div>
-                    <div class="hidden_div">
-                        <img src="https://www.bing.com/images/blob?bcid=S-pa3QPfh28HeN5OxHd.yZpdzh.q.....24" class="endomorph-img" alt="Endomorph Image" />
-                    </div>
+    </div>
+        <main>
+<section>
+    <div class="body_types">
+            <div class="BodyTypes">
+            <div class="def" id="endomorph" onclick="toggleHiddenDiv()"><img src="https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg" class="box1" height="250" width="420"></div>
+            <div class="def" id="ectomorph" onclick="toggleHiddenDiv()">ECTOMORPH</div>
+            <div class="def" id="mesomorph" onclick="toggleHiddenDiv()">MESOMORPH</div>
             </div>
         </div>
-    </div>
+</div>
+</section>
+        </main>
 </body>
 </html>
