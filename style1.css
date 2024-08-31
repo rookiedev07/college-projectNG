@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-top: -0.05em;
+}
+::-webkit-scrollbar{
+display: none;
+}
+.container{
+    background-image: url('https://i.ytimg.com/vi/B8Gjmvj3NDo/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    margin-bottom: 2em;
+    margin-left: -1em;
+    margin-right: -1em;
+    height: 52em;
+    margin-top: 0em;
+}
+.main-quote{
+    font-family: "Bodoni Moda SC";
+    color: white;
+    font-size: 29px;
+    width: 600px;
+    margin-top: 3.5em;
+}
+h2{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#f{
+    color: rgb(218, 216, 216);
+}
+nav{
+    display: inline-block;
+}
+h4{
+    float: right;
+    margin-right: 20px;
+    color: rgb(218, 216, 216);
+    transition: color 0.4s ease;
+}
+h4:hover{
+    color: greenyellow;
+}
+li{
+    display: inline-block;
+    margin-left: 3em;
+    color: rgb(218, 216, 216);
+    transition: color 0.4s ease;
+}
+.nav-bar li:hover{
+    color: greenyellow;
+}
+.quotes{
+    height: 200px;
+    width: 470px;
+    color: rgb(218, 216, 216);
+    padding-top: 4em;
+    margin-left: 3em;
+    font-size: 1.25em;  
+}
+#quoter{
+    color: greenyellow;
+    font-family: "Bodoni Moda SC";
+}
+.image{
+    background-color: rgb(31, 30, 30);
+    height: 380px;
+    width: 530px;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    justify-content: end;
+    margin-top: -10em;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    margin-right: 4em;
+    animation: fly-in-from-right ease 2.2s forwards;
+}
+.guy{
+    background-size: cover;
+    padding-top: 2.3em;
+}
+@keyframes fly-in-from-right {
+from {
+transform: translateX(100%); /* Start off-screen to the right */
+opacity: 0; /* Optional: start with 0 opacity */
+}
+to {
+transform: translateX(0); /* End at the original position */
+opacity: 1; /* Optional: end with full opacity */
+}
+}
+header{
+
+background-color: black;
+margin-left: -1em;
+margin-right: -1em;
+}
+@keyframes fly-in-from-up {
+from{
+transform: translateY(-100%);
+opacity: 0;
+}
+to{
+transform: translateY(0);
+opacity: 1;
+}
+}
+#Re, #Qu{
+animation: fly-in-from-left ease 2.2s forwards;
+}
+@keyframes fly-in-from-left {
+from{
+transform: translateX(-100%);
+opacity: 0;
+}
+to{
+transform: translateX(0);
+opacity: 1;
+}
+}
+.reminder{
+    height: 170px;
+    width: 300px;
+    text-wrap: wrap;
+    color: black;
+    background-color: greenyellow;
+    border-radius: 2.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.25em;
+    margin-top: 8em;
+    margin-left: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-style: italic;
+}
+#Rheading{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.endomorph{
+    height: 14em;
+    width: 18em;
+    border-radius: 1.5em;
+    border-color: grey;
+    border-style: solid;
+    box-shadow: 12px 10px 10px rgb(0, 0, 0);    
+}
+.endomorph section{
+    height: 9.7em;
+    width: 18em;
+    border-bottom: solid grey;
+    overflow: hidden;
+    object-fit: contain;
+}
+section img{
+    height: 21em;
+    width: 18em;
+    border-radius: 1.5em;
+}
+.endomorph h3{
+    color: black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mesomorph{
+    height: 14em;
+    width: 18em;
+    border-radius: 1.5em;
+    border-color: grey;
+    border-style: solid;
+    box-shadow: 12px 10px 10px rgb(0, 0, 0);
+}
+.mesomorph section{
+    height: 9.3em;
+    width: 18em;
+    border-bottom: solid grey;
+    overflow: hidden;
+    object-fit: contain;
+}
+.mesomorph h3{
+    color: black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Body_Type_Info{
+    display: flex;
+    justify-content: space-around;
+}
+.Body_Type_Info :hover{
+    scale: 1.2;
+}
+#parent{
+    height: auto;
+    width: fit-content;
+}
+#parent:hover .child{
+    transform: scale(1.1);
+}
+#child1{
+    height: 190px;
+    width: 250px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
+    background-size: cover;
+    margin-left: 4em;
+}
+#child2{
+    height: 65px;
+    width: 250px;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    background-color: rgb(165, 165, 165);
+    margin-left: 4em;
+    margin-top: -1.5em;
+}
+.title{
+    top: 5em;
+    color: black;
+}
