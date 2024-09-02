@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
 body {
     background-color: white;
     color: white;
@@ -43,6 +43,10 @@ h2 {
 
 #g {
     color: rgb(159, 224, 61);
+    font-family: "Protest Guerrilla";
+    letter-spacing: 3px;
+    font-size: 1.85em;
+    font-style: italic;
 }
 
 nav {
@@ -64,6 +68,7 @@ h4:hover {
 .LOGO{
     padding-top: 20px;
     padding-left: 20px;
+    margin-left: 15em;
 }
 li{
     display: inline-block;
@@ -72,10 +77,12 @@ li{
     transition: color 0.4s ease;
     cursor: pointer;
 }
+.nav-bar{
+    padding-left: 6px;
+}
 .nav-bar li:hover {
     color: greenyellow;
 }
-
 .quotes {
     height: 200px;
     width: 470px;
@@ -180,7 +187,7 @@ header {
 }
 
 .reminder {
-    height: 170px;
+    height: 180px;
     width: 300px;
     text-wrap: wrap;
     color: black;
@@ -198,9 +205,9 @@ header {
 
 #Rheading {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Protest Guerrilla";
+    letter-spacing: 2px;
 }
-
 .endomorph {
     height: 14em;
     width: 18em;
@@ -263,6 +270,7 @@ section img {
 #parent {
     height: auto;
     width: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #parent:hover .endo_child {
@@ -282,7 +290,7 @@ section img {
 }
 
 #child2 {
-    height: 100px;
+    height: 115px;
     width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
@@ -311,6 +319,7 @@ section img {
 #parent1 {
     height: auto;
     width: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #parent1:hover .ecto_child {
@@ -332,7 +341,7 @@ section img {
 }
 
 #child-2nd {
-    height: 100px;
+    height: 115px;
     width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
@@ -352,6 +361,7 @@ section img {
 #parent_2 {
     height: auto;
     width: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #parent_2:hover .meso_child{
@@ -373,7 +383,7 @@ section img {
 }
 
 #child_2 {
-    height: 100px;
+    height: 125px;
     width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
