@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 219, 219);
     color: white;
     overflow: scroll;
     scrollbar-width: none;
@@ -13,8 +13,9 @@ display: none;
     background-image: url('https://i.ytimg.com/vi/B8Gjmvj3NDo/maxresdefault.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: fixed;
     background-blend-mode: overlay;
+    opacity: 0.85;
     margin-bottom: 2em;
     margin-left: -1em;
     margin-right: -1em;
@@ -45,6 +46,7 @@ h4{
     margin-right: 20px;
     color: rgb(218, 216, 216);
     transition: color 0.4s ease;
+    cursor: pointer;
 }
 h4:hover{
     color: greenyellow;
@@ -54,6 +56,7 @@ li{
     margin-left: 3em;
     color: rgb(218, 216, 216);
     transition: color 0.4s ease;
+    cursor: pointer;
 }
 .nav-bar li:hover{
     color: greenyellow;
@@ -202,28 +205,131 @@ section img{
     height: auto;
     width: fit-content;
 }
-#parent:hover .child{
-    transform: scale(1.1);
+#parent:hover .child {
+    transform: scale(1.05);
 }
+
 #child1{
     height: 190px;
-    width: 250px;
+    width: 300px;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
-    background-size: cover;
-    margin-left: 4em;
+    background-size: 15.1em;
+    border: 2px solid rgb(74, 74, 74);
+    margin-left: -3em;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out 0.1s;
 }
 #child2{
-    height: 65px;
-    width: 250px;
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
-    background-color: rgb(165, 165, 165);
-    margin-left: 4em;
-    margin-top: -1.5em;
+    height: 81px;
+    width: 300px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: black;
+    color: white;
+    margin-left: -3em;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: -0.22em;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease-in-out 0.1s;
 }
-.title{
-    top: 5em;
-    color: black;
+#title{
+    top: 0em;
+    color: rgb(0, 0, 0);
+    margin-left: 7px;
+    margin-top: 11px;
+    color: white;
+}
+#sub-title{
+    color: white;
+    text-wrap: wrap;
+    margin-top: -14px;
+    margin-left: 7px;
+}
+#parent1{
+    height: auto;
+    width: fit-content;
+}
+#parent1:hover .Child {
+    transform: scale(1.05);
+}
+#child-1st{
+    height: 190px;
+    width: 252px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
+    background-size: 15.1em;
+    border: 2px solid rgb(74, 74, 74);
+    margin-left: 4em;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out 0.1s;
+}
+#child-2nd{
+    height: 81px;
+    width: 252px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: black;
+    margin-left: 4em;
+    border: 2px solid rgb(74,74,74);
+    margin-top: -0.22em;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease-in-out 0.1s;
+}
+.sec1{
+    display: flex;
+    justify-content: space-around;
+}
+#parent2{
+    height: auto;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+}
+#parent2:hover .child_2 {
+    transform: scale(1.05);
+}
+#child_1{
+    height: 190px;
+    width: 252px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
+    background-size: 15.1em;
+    border: 2px solid rgb(74, 74, 74);
+    margin-left: 4em;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out 0.1s;
+}
+#child_2{
+    height: 81px;
+    width: 252px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: black;
+    margin-left: 4em;
+    border: 2px solid rgb(74,74,74);
+    margin-top: -0.22em;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease-in-out 0.1s;
+}
+#title1{
+    top: 0em;
+    color: rgb(0, 0, 0);
+    margin-left: 7px;
+    margin-top: 11px;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+}
+#sub-title1{
+    color: white;
+    text-wrap: wrap;
+    padding: 0px 0px;
+    margin-left: 7px;
+    position: absolute;
+    padding: 10px;
 }
