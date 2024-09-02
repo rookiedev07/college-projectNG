@@ -1,55 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-body{
-    background-color: rgb(219, 219, 219);
+
+body {
+    background-color: white;
     color: white;
     overflow: scroll;
     scrollbar-width: none;
     margin-top: -0.05em;
 }
-::-webkit-scrollbar{
-display: none;
+
+::-webkit-scrollbar {
+    display: none;
 }
-.container{
+
+.container {
     background-image: url('https://i.ytimg.com/vi/B8Gjmvj3NDo/maxresdefault.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
     background-blend-mode: overlay;
-    opacity: 0.85;
     margin-bottom: 2em;
     margin-left: -1em;
     margin-right: -1em;
     height: 52em;
-    margin-top: 0em;
+    margin-top: -12em;
+    height: 1000px;
 }
-.main-quote{
+
+.main-quote {
     font-family: "Bodoni Moda SC";
     color: white;
     font-size: 29px;
     width: 600px;
     margin-top: 3.5em;
 }
-h2{
+
+h2 {
     color: rgb(0, 0, 0);
     display: inline-block;
     margin-left: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#f{
-    color: rgb(218, 216, 216);
+
+#g {
+    color: rgb(159, 224, 61);
 }
-nav{
+
+nav {
     display: inline-block;
 }
-h4{
+
+h4 {
     float: right;
     margin-right: 20px;
     color: rgb(218, 216, 216);
     transition: color 0.4s ease;
     cursor: pointer;
+    padding-top: 20px;
 }
-h4:hover{
+
+h4:hover {
     color: greenyellow;
+}
+.LOGO{
+    padding-top: 20px;
+    padding-left: 20px;
 }
 li{
     display: inline-block;
@@ -58,80 +72,114 @@ li{
     transition: color 0.4s ease;
     cursor: pointer;
 }
-.nav-bar li:hover{
+.nav-bar li:hover {
     color: greenyellow;
 }
-.quotes{
+
+.quotes {
     height: 200px;
     width: 470px;
     color: rgb(218, 216, 216);
     padding-top: 4em;
     margin-left: 3em;
-    font-size: 1.25em;  
+    font-size: 1.25em;
 }
-#quoter{
+
+#quoter {
     color: greenyellow;
     font-family: "Bodoni Moda SC";
 }
-.image{
+
+.image {
     background-color: rgb(31, 30, 30);
     height: 380px;
-    width: 530px;
+    width: 490px;
     display: flex;
     align-items: center;
     border-radius: 10%;
     justify-content: end;
-    margin-top: -10em;
+    margin-top: -7.5em;
     overflow: hidden;
     position: relative;
     float: right;
-    margin-right: 4em;
+    margin-right: 2em;
     animation: fly-in-from-right ease 2.2s forwards;
 }
-.guy{
+
+.guy {
     background-size: cover;
     padding-top: 2.3em;
 }
-@keyframes fly-in-from-right {
-from {
-transform: translateX(100%); /* Start off-screen to the right */
-opacity: 0; /* Optional: start with 0 opacity */
-}
-to {
-transform: translateX(0); /* End at the original position */
-opacity: 1; /* Optional: end with full opacity */
-}
-}
-header{
 
-background-color: black;
-margin-left: -1em;
-margin-right: -1em;
+@keyframes fly-in-from-right {
+    from {
+        transform: translateX(100%);
+        /* Start off-screen to the right */
+        opacity: 0;
+        /* Optional: start with 0 opacity */
+    }
+
+    to {
+        transform: translateX(0);
+        /* End at the original position */
+        opacity: 1;
+        /* Optional: end with full opacity */
+    }
 }
+
+header {
+    background-color: black;
+    margin-left: -1em;
+    margin-right: -1em;
+    animation: fly-in-from-up ease 2.2s forwards;
+}
+
 @keyframes fly-in-from-up {
-from{
-transform: translateY(-100%);
-opacity: 0;
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-to{
-transform: translateY(0);
-opacity: 1;
+
+#Qu {
+    animation: fly-in-from-left 2.2s forwards;
+    padding-top: 11.5em;
 }
+
+#Re {
+    opacity: 0;
+    animation: fade-in 2.2s forwards;
+    animation-delay: 2.2s;
 }
-#Re, #Qu{
-animation: fly-in-from-left ease 2.2s forwards;
-}
+
 @keyframes fly-in-from-left {
-from{
-transform: translateX(-100%);
-opacity: 0;
+    from {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
-to{
-transform: translateX(0);
-opacity: 1;
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-}
-.reminder{
+
+.reminder {
     height: 170px;
     width: 300px;
     text-wrap: wrap;
@@ -141,41 +189,19 @@ opacity: 1;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 0.25em;
-    margin-top: 8em;
+    margin-top: 7em;
     margin-left: 4em;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     font-style: italic;
 }
-#Rheading{
+
+#Rheading {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-.endomorph{
-    height: 14em;
-    width: 18em;
-    border-radius: 1.5em;
-    border-color: grey;
-    border-style: solid;
-    box-shadow: 12px 10px 10px rgb(0, 0, 0);    
-}
-.endomorph section{
-    height: 9.7em;
-    width: 18em;
-    border-bottom: solid grey;
-    overflow: hidden;
-    object-fit: contain;
-}
-section img{
-    height: 21em;
-    width: 18em;
-    border-radius: 1.5em;
-}
-.endomorph h3{
-    color: black;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.mesomorph{
+
+.endomorph {
     height: 14em;
     width: 18em;
     border-radius: 1.5em;
@@ -183,153 +209,178 @@ section img{
     border-style: solid;
     box-shadow: 12px 10px 10px rgb(0, 0, 0);
 }
-.mesomorph section{
+
+.endomorph section {
+    height: 9.7em;
+    width: 18em;
+    border-bottom: solid grey;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+section img {
+    height: 21em;
+    width: 18em;
+    border-radius: 1.5em;
+}
+
+.endomorph h3 {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mesomorph {
+    height: 14em;
+    width: 18em;
+    border-radius: 1.5em;
+    border-color: grey;
+    border-style: solid;
+    box-shadow: 12px 10px 10px rgb(0, 0, 0);
+}
+
+.mesomorph section {
     height: 9.3em;
     width: 18em;
     border-bottom: solid grey;
     overflow: hidden;
     object-fit: contain;
 }
-.mesomorph h3{
+
+.mesomorph h3 {
     color: black;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.Body_Type_Info{
+
+.Body_Type_Info {
     display: flex;
     justify-content: space-around;
 }
-.Body_Type_Info :hover{
+
+.Body_Type_Info :hover {
     scale: 1.2;
 }
-#parent{
+
+#parent {
     height: auto;
     width: fit-content;
 }
-#parent:hover .child {
-    transform: scale(1.05);
+
+#parent:hover .endo_child {
+    transform: scale(1.075);
 }
 
-#child1{
+#child1 {
     height: 190px;
-    width: 300px;
+    width: 290px;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
-    background-size: 15.1em;
+    background-size: 18.7em;
     border: 2px solid rgb(74, 74, 74);
-    margin-left: -3em;
     overflow: hidden;
     transition: transform 0.4s ease-in-out 0.1s;
 }
-#child2{
-    height: 81px;
-    width: 300px;
+
+#child2 {
+    height: 100px;
+    width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: black;
-    color: white;
-    margin-left: -3em;
+    background: transparent 50px;
     border: 2px solid rgb(0, 0, 0);
     margin-top: -0.22em;
     backdrop-filter: blur(5px);
     transition: transform 0.4s ease-in-out 0.1s;
 }
-#title{
+
+#title {
     top: 0em;
     color: rgb(0, 0, 0);
     margin-left: 7px;
     margin-top: 11px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
-#sub-title{
-    color: white;
+
+#sub-title {
+    color: rgb(0, 0, 0);
     text-wrap: wrap;
     margin-top: -14px;
     margin-left: 7px;
 }
-#parent1{
+
+#parent1 {
     height: auto;
     width: fit-content;
 }
-#parent1:hover .Child {
-    transform: scale(1.05);
+
+#parent1:hover .ecto_child {
+    transform: scale(1.075);
 }
-#child-1st{
+
+#child-1st {
     height: 190px;
-    width: 252px;
+    width: 290px;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
-    background-size: 15.1em;
+    background-image: url('https://static.tuasaude.com/media/article/rt/ec/ectomorph_37327.jpg');
+    background-size: 18.7em;
+    align-items: center;
     border: 2px solid rgb(74, 74, 74);
     margin-left: 4em;
     overflow: hidden;
     transition: transform 0.4s ease-in-out 0.1s;
 }
-#child-2nd{
-    height: 81px;
-    width: 252px;
+
+#child-2nd {
+    height: 100px;
+    width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: black;
+    background: transparent 50px;
     margin-left: 4em;
-    border: 2px solid rgb(74,74,74);
+    border: 2px solid rgb(74, 74, 74);
     margin-top: -0.22em;
     backdrop-filter: blur(5px);
     transition: transform 0.4s ease-in-out 0.1s;
 }
-.sec1{
+
+.sec1 {
     display: flex;
     justify-content: space-around;
 }
-#parent2{
+
+#parent_2 {
     height: auto;
     width: fit-content;
-    position: relative;
-    display: inline-block;
 }
-#parent2:hover .child_2 {
-    transform: scale(1.05);
+
+#parent_2:hover .meso_child{
+    transform: scale(1.075);
 }
-#child_1{
+
+#child_1 {
     height: 190px;
-    width: 252px;
+    width: 290px;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    background-image: url('https://static.tuasaude.com/media/article/cd/yp/endomorph_37328.jpg');
-    background-size: 15.1em;
+    background-image: url('https://static.tuasaude.com/media/article/rh/la/mesomorph_37330.jpg');
+    background-size: 18.7em;
+    align-items: center;
     border: 2px solid rgb(74, 74, 74);
     margin-left: 4em;
     overflow: hidden;
     transition: transform 0.4s ease-in-out 0.1s;
 }
-#child_2{
-    height: 81px;
-    width: 252px;
+
+#child_2 {
+    height: 100px;
+    width: 290px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: black;
+    background: transparent 50px;
     margin-left: 4em;
-    border: 2px solid rgb(74,74,74);
+    border: 2px solid rgb(74, 74, 74);
     margin-top: -0.22em;
     backdrop-filter: blur(5px);
     transition: transform 0.4s ease-in-out 0.1s;
-}
-#title1{
-    top: 0em;
-    color: rgb(0, 0, 0);
-    margin-left: 7px;
-    margin-top: 11px;
-    color: white;
-    position: absolute;
-    padding: 10px;
-    z-index: 1;
-}
-#sub-title1{
-    color: white;
-    text-wrap: wrap;
-    padding: 0px 0px;
-    margin-left: 7px;
-    position: absolute;
-    padding: 10px;
 }
