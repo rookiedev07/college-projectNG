@@ -407,10 +407,24 @@ section img {
     transition: transform 0.4s ease-in-out 0.1s;
 }
 .line1{
-    margin-left: -1em;
+    background-image: url('https://github.com/rookiedev07/college-projectNG/blob/main/Screenshot%202024-09-04%20144216.png?raw=true');
+    background-size: cover;
     color: black;
     align-items: center;
+    text-align: center;
+    margin-left: -1em;
     height: 4em;
     width: 120%;
     background-color: aliceblue;
+}
+.line1 h3{
+    margin-left: -15em;
+    padding: 0.9em;
+    color: black;
+}
+.sec2 img{
+    margin-top: 7em;
+}
+.sec2 h2{
+    margin-top: 10em;
 }
