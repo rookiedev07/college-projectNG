@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+margin: 6em 1em;
+}
+.box {
+    border: 4px solid rgb(236, 16, 16);
+    background-color: black;
+    margin: 1em 1em;
+    padding: 4em 1em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.box h2 {
+    text-align: center;
+}
+.box  p {
+    padding: 2em 9em;
+}
